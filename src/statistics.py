@@ -49,6 +49,7 @@ class StatisticsGenerator:
     Generates statistics from analyzed CGPSC questions.
     
     This class is modular and designed for aggregation across multiple years.
+    Reads from the aggregation dict (normalized keys) in analyzer output.
     """
     
     def __init__(self, input_file: Optional[str] = None, output_dir: Optional[str] = None):
@@ -96,17 +97,23 @@ class StatisticsGenerator:
         logger.info(f"Loaded {len(self.questions)} questions")
         return self.questions
     
-    def _count_field(self, field_name: str) -> Dict[str, int]:
+    def _count_field(self, aggregation_key: str) -> Dict[str, int]:
         """
-        Count occurrences of a field across all questions.
+        Count occurrences of a field from aggregation dict across all questions.
         
         Args:
-            field_name: Name of the field to count
+            aggregation_key: Key name in the aggregation dict
             
         Returns:
             Dictionary with sorted counts (descending)
         """
-        values = [q.get(field_name) for q in self.questions if q.get(field_name)]
+        values = []
+        for q in self.questions:
+            aggregation = q.get('aggregation', {})
+            value = aggregation.get(aggregation_key)
+            if value:
+                values.append(value)
+        
         counter = Counter(values)
         return dict(sorted(counter.items(), key=lambda x: x[1], reverse=True))
     
@@ -124,15 +131,50 @@ class StatisticsGenerator:
         
         self.report = StatisticsReport(
             total_questions=len(self.questions),
-            subjects=self._count_field('subject'),
-            topics=self._count_field('topic'),
-            subtopics=self._count_field('subtopic'),
+            subjects=self._count_field('subject_id'),
+            topics=self._count_field('topic_id'),
+            subtopics=self._count_field('subtopic_id'),
             difficulty=self._count_field('difficulty'),
             question_types=self._count_field('question_type')
         )
         
         logger.info(f"Statistics generated: {self.report.total_questions} questions processed")
         return self.report
+    
+    def validate_counts(self) -> list[str]:
+        """
+        Validate that all dimension counts sum to total questions.
+        
+        Returns:
+            List of validation errors (empty if valid)
+        """
+        if not self.report:
+            raise ValueError("Report not generated. Call generate_statistics() first.")
+        
+        errors = []
+        total = self.report.total_questions
+        
+        subject_sum = sum(self.report.subjects.values())
+        if subject_sum != total:
+            errors.append(f"Subject counts sum to {subject_sum}, expected {total}")
+        
+        topic_sum = sum(self.report.topics.values())
+        if topic_sum != total:
+            errors.append(f"Topic counts sum to {topic_sum}, expected {total}")
+        
+        subtopic_sum = sum(self.report.subtopics.values())
+        if subtopic_sum != total:
+            errors.append(f"Subtopic counts sum to {subtopic_sum}, expected {total}")
+        
+        difficulty_sum = sum(self.report.difficulty.values())
+        if difficulty_sum != total:
+            errors.append(f"Difficulty counts sum to {difficulty_sum}, expected {total}")
+        
+        question_type_sum = sum(self.report.question_types.values())
+        if question_type_sum != total:
+            errors.append(f"Question type counts sum to {question_type_sum}, expected {total}")
+        
+        return errors
     
     def save_report(self, output_file: Optional[str] = None) -> Path:
         """
@@ -286,6 +328,16 @@ def main():
         # Load and generate
         generator.load_questions()
         generator.generate_statistics()
+        
+        # Validate counts
+        validation_errors = generator.validate_counts()
+        if validation_errors:
+            logger.error("Validation failed:")
+            for error in validation_errors:
+                logger.error(f"  - {error}")
+            raise ValueError("Statistics validation failed")
+        
+        logger.info("✓ All count validations passed")
         
         # Save report
         output_path = generator.save_report()
