@@ -4,7 +4,7 @@ CGPSC Intelligence System - Statistics Module
 Generates comprehensive statistics from analyzed CGPSC questions.
 Designed to be modular and composable for multi-year trend analysis.
 
-Author: CGPSC Intelligence System
+Year-agnostic: accepts input/output paths as parameters.
 """
 
 import json
@@ -15,12 +15,6 @@ from collections import Counter
 from dataclasses import dataclass, asdict
 from datetime import datetime
 
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
 logger = logging.getLogger(__name__)
 
 
@@ -52,16 +46,16 @@ class StatisticsGenerator:
     Reads from the aggregation dict (normalized keys) in analyzer output.
     """
     
-    def __init__(self, input_file: Optional[str] = None, output_dir: Optional[str] = None):
+    def __init__(self, input_file: str, output_dir: str):
         """
         Initialize the statistics generator.
         
         Args:
-            input_file: Path to input analyzed JSON file (default: data/analyzed/cgpsc_2025_analyzed.json)
-            output_dir: Directory to save output (default: data/stats)
+            input_file: Path to input analyzed JSON file
+            output_dir: Directory to save output
         """
-        self.input_file = Path(input_file or "data/analyzed/cgpsc_2025_analyzed.json")
-        self.output_dir = Path(output_dir or "data/stats")
+        self.input_file = Path(input_file)
+        self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         self.questions: List[Dict[str, Any]] = []
@@ -176,12 +170,12 @@ class StatisticsGenerator:
         
         return errors
     
-    def save_report(self, output_file: Optional[str] = None) -> Path:
+    def save_report(self, output_file: str) -> Path:
         """
         Save statistics report to JSON file.
         
         Args:
-            output_file: Output filename (default: cgpsc_2025_stats.json)
+            output_file: Output filename
             
         Returns:
             Path to saved file
@@ -192,8 +186,7 @@ class StatisticsGenerator:
         if not self.report:
             raise ValueError("Report not generated. Call generate_statistics() first.")
         
-        filename = output_file or "cgpsc_2025_stats.json"
-        output_path = self.output_dir / filename
+        output_path = self.output_dir / output_file
         
         logger.info(f"Saving report to {output_path}")
         
@@ -319,43 +312,56 @@ class StatisticsGenerator:
         return aggregated_report
 
 
-def main():
-    """Main entry point for statistics generation."""
-    try:
-        # Initialize generator
-        generator = StatisticsGenerator()
+def run_statistics(input_file: str, output_file: str) -> tuple[bool, str]:
+    """
+    Generate statistics from analyzer output.
+    
+    Args:
+        input_file: Path to analyzer output JSON
+        output_file: Path to save statistics JSON
         
-        # Load and generate
+    Returns:
+        Tuple of (success: bool, message: str)
+    """
+    try:
+        output_dir = Path(output_file).parent
+        output_filename = Path(output_file).name
+        
+        generator = StatisticsGenerator(input_file, str(output_dir))
         generator.load_questions()
         generator.generate_statistics()
         
-        # Validate counts
+        # Validate
         validation_errors = generator.validate_counts()
         if validation_errors:
-            logger.error("Validation failed:")
-            for error in validation_errors:
-                logger.error(f"  - {error}")
-            raise ValueError("Statistics validation failed")
+            msg = f"Statistics validation failed: {validation_errors}"
+            logger.error(msg)
+            return False, msg
         
-        logger.info("✓ All count validations passed")
+        generator.save_report(output_filename)
+        msg = f"✓ Statistics generated: {generator.report.total_questions} questions"
+        logger.info(msg)
+        return True, msg
         
-        # Save report
-        output_path = generator.save_report()
-        
-        # Print summary
-        generator.print_summary()
-        
-        logger.info(f"Statistics saved to {output_path}")
-        
-    except FileNotFoundError as e:
-        logger.error(f"File error: {e}")
-        raise
-    except json.JSONDecodeError as e:
-        logger.error(f"JSON decode error: {e}")
-        raise
     except Exception as e:
-        logger.error(f"Unexpected error: {e}")
-        raise
+        msg = f"Statistics generation failed: {str(e)}"
+        logger.error(msg)
+        return False, msg
+
+
+def main():
+    """Main entry point for statistics generation (legacy CLI)."""
+    import argparse
+    import sys
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", type=Path, help="Path to analyzer output JSON")
+    parser.add_argument("-o", "--output", type=Path, required=True, help="Output statistics JSON file")
+    args = parser.parse_args()
+
+    success, message = run_statistics(str(args.input), str(args.output))
+    print(message)
+    sys.exit(0 if success else 1)
 
 
 if __name__ == "__main__":
