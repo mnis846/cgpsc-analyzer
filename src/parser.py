@@ -1,8 +1,11 @@
-"""Draft parser for the supplied CGPSC OCR question paper.
+"""
+Draft parser for CGPSC OCR question paper.
 
 This intentionally favors traceability over aggressive OCR correction. Every
 question keeps its original OCR block and receives warnings when extraction is
 incomplete or relies on a fuzzy option label.
+
+Year-agnostic: accepts year as parameter instead of hardcoding.
 """
 
 from __future__ import annotations
@@ -10,12 +13,10 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import logging
 from pathlib import Path
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "data" / "raw_text" / "ocr_output.txt"
-DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "json" / "questions_draft.json"
+logger = logging.getLogger(__name__)
 
 QUESTION_COUNT = 100
 
@@ -33,7 +34,7 @@ MOJIBAKE_REPLACEMENTS = {
 }
 
 FOOTER_RE = re.compile(r"^[^A-Za-z0-9]{0,8}\$24\s*-\s*25\s*$")
-ISOLATED_NOISE_RE = re.compile(r"^[\s|\\/<>{}\[\]~_=+\-â€œâ€]+$")
+ISOLATED_NOISE_RE = re.compile(r"^[\s|\\/<>{}\[\]~_=+\-â€œâ€]+$")
 QUESTION_TYPE_PATTERNS = (
     ("match_following", re.compile(r"\bmatch\b|\bcolumn\s*[-\u2014]?\s*i\b", re.I)),
     ("assertion_reason", re.compile(r"\bassertion\s*\(A\)|\breason\s*\(R\)", re.I)),
@@ -54,18 +55,21 @@ FUZZY_OPTION_STARTS = (
 
 
 def repair_mojibake(text: str) -> str:
+    """Repair character encoding issues."""
     for broken, repaired in MOJIBAKE_REPLACEMENTS.items():
         text = text.replace(broken, repaired)
     return text
 
 
 def clean_line(line: str) -> str:
+    """Clean and normalize a text line."""
     line = repair_mojibake(line).strip()
     line = re.sub(r"\s+", " ", line)
     return line
 
 
 def is_noise_line(line: str) -> bool:
+    """Detect if line is noise/footer/scan artifact."""
     if not line:
         return True
     if FOOTER_RE.match(line):
@@ -78,8 +82,7 @@ def is_noise_line(line: str) -> bool:
 
 
 def question_start_match(line: str, expected: int) -> re.Match[str] | None:
-    # Main question starts may have scan marks before the number. Requiring the
-    # expected next number prevents list items inside questions becoming starts.
+    """Detect if line is the start of a new question."""
     pattern = re.compile(
         rf"^[^A-Za-z0-9]{{0,20}}{expected}[\.,]\s+(?P<body>.+)$",
         re.IGNORECASE,
@@ -88,6 +91,7 @@ def question_start_match(line: str, expected: int) -> re.Match[str] | None:
 
 
 def segment_questions(raw_text: str) -> list[dict]:
+    """Segment raw text into individual question blocks."""
     raw_lines = raw_text.splitlines()
     questions: list[dict] = []
     current_raw: list[str] = []
@@ -95,8 +99,6 @@ def segment_questions(raw_text: str) -> list[dict]:
     current_number = 1
     expected = 2
 
-    # Question 1's number is absent in this OCR, so the document beginning is
-    # treated as question 1 and subsequent boundaries are sequence-aware.
     for raw_line in raw_lines:
         cleaned = clean_line(raw_line)
         match = question_start_match(cleaned, expected) if expected <= QUESTION_COUNT else None
@@ -129,6 +131,7 @@ def segment_questions(raw_text: str) -> list[dict]:
 
 
 def fuzzy_option_start(line: str) -> tuple[str, re.Match[str]] | None:
+    """Detect fuzzy option label."""
     for label, pattern in FUZZY_OPTION_STARTS:
         match = pattern.match(line)
         if match:
@@ -137,6 +140,7 @@ def fuzzy_option_start(line: str) -> tuple[str, re.Match[str]] | None:
 
 
 def exact_option_start(line: str) -> re.Match[str] | None:
+    """Detect exact option label."""
     for match in EXACT_OPTION_ANY_RE.finditer(line):
         prefix = line[: match.start()]
         if match.start() <= 16 and not re.search(r"[A-Za-z]{3}", prefix):
@@ -145,6 +149,7 @@ def exact_option_start(line: str) -> re.Match[str] | None:
 
 
 def split_option_line(line: str) -> tuple[list[tuple[str, str]], bool]:
+    """Split line into option parts."""
     first = exact_option_start(line)
     fuzzy = False
 
@@ -172,10 +177,12 @@ def split_option_line(line: str) -> tuple[list[tuple[str, str]], bool]:
 
 
 def join_fragments(fragments: list[str]) -> str:
+    """Join text fragments."""
     return re.sub(r"\s+", " ", " ".join(fragment for fragment in fragments if fragment)).strip()
 
 
 def classify_question(text: str) -> str:
+    """Classify question type."""
     for question_type, pattern in QUESTION_TYPE_PATTERNS:
         if pattern.search(text):
             return question_type
@@ -183,6 +190,7 @@ def classify_question(text: str) -> str:
 
 
 def parse_question(block: dict) -> dict:
+    """Parse a single question block."""
     question_fragments: list[str] = []
     option_fragments: dict[str, list[str]] = {}
     option_order: list[str] = []
@@ -244,7 +252,8 @@ def parse_question(block: dict) -> dict:
     }
 
 
-def build_document(raw_text: str, source: Path) -> dict:
+def build_document(raw_text: str, source: Path, year: int) -> dict:
+    """Build document structure with parsed questions."""
     blocks = segment_questions(raw_text)
     questions = [parse_question(block) for block in blocks]
     flagged = [question["question_no"] for question in questions if question["warnings"]]
@@ -256,7 +265,7 @@ def build_document(raw_text: str, source: Path) -> dict:
     return {
         "source_file": str(source),
         "exam": "CGPSC Prelims",
-        "year": 2025,
+        "year": year,
         "draft": True,
         "summary": {
             "questions_extracted": len(questions),
@@ -270,19 +279,57 @@ def build_document(raw_text: str, source: Path) -> dict:
     }
 
 
+def run_parser(
+    input_file: str,
+    output_file: str,
+    year: int
+) -> tuple[bool, str]:
+    """
+    Parse OCR output into structured JSON.
+    
+    Args:
+        input_file: Path to OCR text file
+        output_file: Path to output JSON file
+        year: Exam year (embedded in output)
+        
+    Returns:
+        Tuple of (success: bool, message: str)
+    """
+    input_path = Path(input_file)
+    output_path = Path(output_file)
+    
+    if not input_path.exists():
+        return False, f"Input file not found: {input_path}"
+    
+    try:
+        logger.info(f"Parsing OCR output: {input_path}")
+        raw_text = input_path.read_text(encoding="utf-8")
+        document = build_document(raw_text, input_path, year)
+        
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(json.dumps(document, ensure_ascii=False, indent=2), encoding="utf-8")
+        
+        logger.info(f"Parser complete: {output_path}")
+        return True, f"Parsed {document['summary']['questions_extracted']} questions"
+        
+    except Exception as e:
+        msg = f"Parser failed: {str(e)}"
+        logger.error(msg)
+        return False, msg
+
+
 def main() -> None:
+    """Command-line interface."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("input", nargs="?", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("-o", "--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("input", type=Path, help="Path to OCR text file")
+    parser.add_argument("year", type=int, help="Exam year")
+    parser.add_argument("-o", "--output", type=Path, required=True, help="Output JSON file path")
     args = parser.parse_args()
 
-    raw_text = args.input.read_text(encoding="utf-8")
-    document = build_document(raw_text, args.input)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(document, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    print(json.dumps(document["summary"], indent=2))
-    print(f"Wrote {args.output}")
+    success, message = run_parser(str(args.input), str(args.output), args.year)
+    print(message)
+    import sys
+    sys.exit(0 if success else 1)
 
 
 if __name__ == "__main__":
