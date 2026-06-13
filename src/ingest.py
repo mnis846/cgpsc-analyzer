@@ -274,7 +274,21 @@ class PaperIngestionWorkflow:
         print("✓ WORKFLOW COMPLETED SUCCESSFULLY")
         print("="*70 + "\n")
         return True
+    
+def run_ingest(
+    analyzed_file,
+    year,
+    skip_stats=False,
+    overwrite=False
+):
+    workflow = PaperIngestionWorkflow()
 
+    return workflow.run_full_workflow(
+        analyzed_file=Path(analyzed_file),
+        year=year,
+        skip_stats=skip_stats,
+        overwrite=overwrite
+    )
 
 def main():
     """Command-line interface for paper ingestion."""

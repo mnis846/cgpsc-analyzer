@@ -1,0 +1,9 @@
+{
+  "year": 2025,
+  "exam": "CGPSC Prelims",
+  "total_questions": 100,
+  "taxonomy_version": "cgpsc-taxonomy-v1.0.0",
+  "ingested_at": "2026-06-13T17:45:24.322490",
+  "source_file": "C:\\CGPSC-projects\\reader\\data\\analyzed\\cgpsc_2025_analyzed.json",
+  "schema_version": "analyzer-record-v1"
+}

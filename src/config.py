@@ -96,6 +96,17 @@ class PipelineConfig:
         """Path to analyzed questions JSON."""
         return self.analyzed_dir / f"cgpsc_{self.year}_analyzed.json"
     
+    @property
+    def validation_dir(self) -> Path:
+        """Directory for validation reports."""
+        return self.data_root / "validation"
+
+
+    @property
+    def validator_output_path(self) -> Path:
+        """Path to validation report."""
+        return self.validation_dir / f"cgpsc_{self.year}_validation.json"
+    
     # ===== DATABASE PATHS =====
     
     @property
@@ -153,6 +164,7 @@ class PipelineConfig:
         self.images_dir.mkdir(parents=True, exist_ok=True)
         self.json_dir.mkdir(parents=True, exist_ok=True)
         self.analyzed_dir.mkdir(parents=True, exist_ok=True)
+        self.validation_dir.mkdir(parents=True, exist_ok=True)
         self.raw_text_dir.mkdir(parents=True, exist_ok=True)
         self.database_questions_dir.mkdir(parents=True, exist_ok=True)
         self.database_metadata_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,26 @@
+{
+  "2023": {
+    "status": "error",
+    "elapsed": 1.8,
+    "stage_results": {
+      "__exception__": {
+        "status": "error",
+        "error": "'charmap' codec can't encode characters in position 2-61: character maps to <undefined>",
+        "elapsed": 1.7666294574737549
+      }
+    },
+    "processed_at": "2026-06-13T19:51:48.661675"
+  },
+  "2024": {
+    "status": "error",
+    "elapsed": 0.6,
+    "stage_results": {
+      "__exception__": {
+        "status": "error",
+        "error": "'charmap' codec can't encode characters in position 2-61: character maps to <undefined>",
+        "elapsed": 0.6212201118469238
+      }
+    },
+    "processed_at": "2026-06-13T19:51:49.284711"
+  }
+}

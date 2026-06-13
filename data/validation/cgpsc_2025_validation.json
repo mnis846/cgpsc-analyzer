@@ -1,0 +1,698 @@
+{
+  "valid_question_sequence": true,
+  "questions_found": 100,
+  "missing_question_numbers": [],
+  "duplicate_question_numbers": [],
+  "questions_needing_review": 63,
+  "review_question_numbers": [
+    1,
+    6,
+    7,
+    10,
+    11,
+    12,
+    31,
+    32,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    57,
+    58,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    76,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    95,
+    96,
+    98
+  ],
+  "review_items": [
+    {
+      "question_no": 1,
+      "confidence": 0.95,
+      "issues": [
+        "question number 1 inferred from document start"
+      ],
+      "question": "ver J.) Khajuraho was the main centre of _/* ff art of which time period ?",
+      "raw_text": "ver J.) Khajuraho was the main centre of\n_/* ff art of which time period ?\n“_# ~~ (A) Chandel period\n(B) Mughal period\n(C) Gupta period\n(D) Mauryan period"
+    },
+    {
+      "question_no": 6,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: B, D",
+        "option labels found: A, C"
+      ],
+      "question": "Which of the following statements | about the Vernacular Press Act, | 1878 are correct ? i. It was passed during the time of Viceroy Lord Ripon. ii. It was repealed by Viceroy Lord Lytton. iii. It was known as the Gagging Act. iv. The law was enacted to take Government action against Vernacular newspaper, especially ‘Amrit Bazar Patrika’. [AA Select the correct option.",
+      "raw_text": "6. Which of the following statements |\nabout the Vernacular Press Act, |\n1878 are correct ?\ni. It was passed during the time\nof Viceroy Lord Ripon.\nii. It was repealed by Viceroy Lord\nLytton.\niii. It was known as the Gagging\nAct.\niv. The law was enacted to take\nGovernment action against\nVernacular newspaper,\nespecially ‘Amrit Bazar\nPatrika’.\n[AA Select the correct option.\n2) (A) Only (i) and (ii) \\\nual = (B) Only (iii) and (iv) !\n: “J (C) Only (i), (ii) and (iii)\n——— (8) (i), (ii), (iti) and (iv)"
+    },
+    {
+      "question_no": 7,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "What was the theme of World Environment Day 2025 ?",
+      "raw_text": "7. What was the theme of World\nEnvironment Day 2025 ?\nfA] Only One Earth\n(B) Solutions to Plastic Pollution\n(C) Beat Plastic Pollution\n(D) Ecosystem Restoration"
+    },
+    {
+      "question_no": 10,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, B",
+        "option labels found: C, D"
+      ],
+      "question": "What is the revised investment limit for small enterprises as per the Union Budget 2025-26 ? fA) %15 Crore (B) ~ 25 Crore",
+      "raw_text": "10. What is the revised investment limit\nfor small enterprises as per the\nUnion Budget 2025-26 ?\nfA) %15 Crore (B) ~ 25 Crore\n(C) 35 Crore (D) %50 Crore"
+    },
+    {
+      "question_no": 11,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: B",
+        "option labels found: A, C, D"
+      ],
+      "question": "Match the following. List -I List — II 1. Divya a. Hockey Deshmukh 2. Smriti b. Badminton Mandhana 3. Sudhanshu c. Kho-Kho Mittal 4. Ayush d. Cricke() Shetty 5. Vandana e. Chess() Katariya Code: (1) (2) (3) (4) (5)",
+      "raw_text": "11. Match the following.\nList -I List — II\n1. Divya a. Hockey\nDeshmukh\n2. Smriti b. Badminton\nMandhana\n3. Sudhanshu c. Kho-Kho\nMittal\n4. Ayush d. Cricke()\nShetty\n5. Vandana e. Chess()\nKatariya\nCode:\n(1) (2) (3) (4) (5)\n(A) (e) (a) (b) (ce) (d)\n4B) (e) (d) (c) (b) (a)\n(C) fe) (a) (c) (a) (b)\n(D) (b) @@) (J) (@ (e)"
+    },
+    {
+      "question_no": 12,
+      "confidence": 0.83,
+      "issues": [
+        "missing option labels: B",
+        "fuzzy option labels inferred: A",
+        "option labels found: A, C, D"
+      ],
+      "question": "Whichis the correct order of top three positions achieved by the following States in ‘Fiscal Health Index 2025’ published by NITI Aayog ? i. Chhattisgarh ii. Goa iii. Odisha",
+      "raw_text": "12. Whichis the correct order of top three\npositions achieved by the following\nStates in ‘Fiscal Health Index 2025’\npublished by NITI Aayog ?\ni. Chhattisgarh\nii. Goa\niii. Odisha\nAA) (i), (ii), (iti)«  (B) (), (0, (ti)\n(C) (ii), (ii), = (D) tt), 0, @)\ni a\n] $24 - 25"
+    },
+    {
+      "question_no": 31,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "A model of the Earth, which is represented by the reduced scale on a flat sheet of paper, is called |",
+      "raw_text": "31. A model of the Earth, which is\nrepresented by the reduced scale\non a flat sheet of paper, is called |\nJAX Flat Earth Model\n(B) Reduced Earth Model\n(C) Distance Earth Model\n(D) Scale Earth Model"
+    },
+    {
+      "question_no": 32,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "In the Constitution of India under Provision of which of the following Articles, the presiding officer may allow any member to address the House in his mother tongue ?",
+      "raw_text": "32. In the Constitution of India under\nProvision of which of the following\nArticles, the presiding officer may\nallow any member to address the\nHouse in his mother tongue ?\n(A) Article - 119 |\ne\\ (B) Article - 120 |\nS lef Article - 111\n“J (D) Article- 112"
+    },
+    {
+      "question_no": 34,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "Which of the following States is not a beneficiary of water resources under the Sardar Sarovar Dam ?",
+      "raw_text": "| 34. Which of the following States is not a\nbeneficiary of water resources under\nthe Sardar Sarovar Dam ?\n(A) Gujarat\n(B) Madhya Pradesh\n(Punjab\n(D) Rajasthan\nee eee\n)] $24 - 25\nd"
+    },
+    {
+      "question_no": 35,
+      "confidence": 0.9,
+      "issues": [
+        "fuzzy option labels inferred: A, D"
+      ],
+      "question": "Which philosophy is not called a heterodox system ?",
+      "raw_text": "35. Which philosophy is not called a\nheterodox system ?\nUAY Carvaka\n(B) Nyaya\n(C) Bauddha\nWF Digambara Jain"
+    },
+    {
+      "question_no": 36,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: B, C",
+        "option labels found: A, D"
+      ],
+      "question": "Under which Article of the Constitution of India, a Judge is transferred from one High Court to another High Court ?",
+      "raw_text": "36. Under which Article of the\nConstitution of India, a Judge is\ntransferred from one High Court to\nanother High Court ?\n\\ (A) Article - 219\no\\ (By Article - 220\nT)=) (©) Article - 221\n/ 3\n*y yy (D) Article - 222"
+    },
+    {
+      "question_no": 37,
+      "confidence": 0.9,
+      "issues": [
+        "fuzzy option labels inferred: A, D"
+      ],
+      "question": "Which of the following products was the first to get a Geographical Indication (GI) tag in India ?",
+      "raw_text": "37. Which of the following products\nwas the first to get a Geographical\nIndication (GI) tag in India ?\n‘(AK Darjeeling Tea\n(B) Banarasi Saree\n(C) Tirupati Laddu\n\\(y Blue Pottery of Jaipur"
+    },
+    {
+      "question_no": 38,
+      "confidence": 0.83,
+      "issues": [
+        "missing option labels: C",
+        "fuzzy option labels inferred: D",
+        "option labels found: A, B, D"
+      ],
+      "question": "Arrange the following projects in chronological order of their launch in India. 1. Project Cheetah 2. Project Lion 3. Project Elephant 4. Project Tiger Code :",
+      "raw_text": "38. Arrange the following projects in\nchronological order of their launch\nin India.\n1. Project Cheetah\n2. Project Lion\n3. Project Elephant\n4. Project Tiger\nCode :\n(A) 1, 2,3, 4\n(B) 2,1,4,3\niC) 3,2, 1,4\nUBy 4,3, 2,1\na a ea ape\niy $24 -25"
+    },
+    {
+      "question_no": 39,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: D"
+      ],
+      "question": "What is the correct number of different crops covered under the Minimum Support Price in India ? i. 5 Pulses ii. 7 Cereals a iii. 7 Oilseeds AON ¥% Choose the correct answer.",
+      "raw_text": "39. What is the correct number of\ndifferent crops covered under the\nMinimum Support Price in India ?\ni. 5 Pulses\nii. 7 Cereals\na iii. 7 Oilseeds\nAON\n¥% Choose the correct answer.\n‘ (A) Only (i) and (ii)\nie) (B) Only (i) and (iii)\n(C) Only (ii) and (iii)\nWF (i), (ii) and (iti)"
+    },
+    {
+      "question_no": 40,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, C",
+        "option labels found: B, D"
+      ],
+      "question": "Consider the following four types of rural-urban streams of internal migration in India. i. From rural areas to rural areas ii. From rural areas to urban areas iii. From urban areas to urban areas iv. From urban areas to rural areas Arrange the above in descending ! order of percentage as given in the | Periodic Labour Force Survey 2020-21 conducted by the Ministry of Statistics and Programme Implementation. HAJ fi) (iti) i) (iv)",
+      "raw_text": "40. Consider the following four types\nof rural-urban streams of internal\nmigration in India.\ni. From rural areas to rural areas\nii. From rural areas to urban\nareas\niii. From urban areas to urban\nareas\niv. From urban areas to rural\nareas\nArrange the above in descending !\norder of percentage as given in the |\nPeriodic Labour Force Survey 2020-21\nconducted by the Ministry of Statistics\nand Programme Implementation.\nHAJ fi) (iti) i) (iv)\n(B) (ii) (ii) (iy)\nMW i) fi) iv) |\n(D) fj) (iv) (iii) |\na a ee ee\n2] $24 - 25"
+    },
+    {
+      "question_no": 41,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, B",
+        "option labels found: C, D"
+      ],
+      "question": "In context of New Labour Code, consider the following statements and select the correct answer : i. 29 labour laws have been codified into 4 labour codes. ii. Employers must provide all workers above the age of 40 years with a free annual health check up. iii. Review of minimum wage in every 5 years. iv. Paid maternity leave of 24 weeks for women workers is ee i) and (i)",
+      "raw_text": "41. In context of New Labour Code,\nconsider the following statements\nand select the correct answer :\n\ni. 29 labour laws have been\ncodified into 4 labour codes.\nii. Employers must provide all\nworkers above the age of\n40 years with a free annual\nhealth check up.\niii. Review of minimum wage in\nevery 5 years.\niv. Paid maternity leave of\n24 weeks for women workers is\nee i) and (i)\nse) (C) (ii), (iii) and (iv)\nA (D) (i), (ii) and (iv)"
+    },
+    {
+      "question_no": 42,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: B"
+      ],
+      "question": "In which Mahajanapada of Ancient India in the seventh century B.C., Ayojjha town was located on the Banks of Sarayu river ?",
+      "raw_text": "42. In which Mahajanapada of Ancient\nIndia in the seventh century B.C.,\nAyojjha town was located on the\nBanks of Sarayu river ?\n\n(A) Avanti\n<(By} Kosala\n(C) Kamboj\n(D) Panchala"
+    },
+    {
+      "question_no": 44,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "In context of the rivers of India and its tributaries, match List - I with List — II and select the correct answer using the code given below the lists. List -I List - II (Rivers) (Tributaries) a. Indus i. Subansiri b. Ganga ii. Kosi ASX ‘ kale <j S c. Brahmaputra iii. Jatinga Tr e\\ d. Meghna iv. Chenab i } a ca Code: ff (a) (b) = (ec) (dd)",
+      "raw_text": "44. In context of the rivers of India\nand its tributaries, match List - I\nwith List — II and select the correct\nanswer using the code given below\nthe lists.\n\nList -I List - II\n(Rivers) (Tributaries)\na. Indus i. Subansiri\nb. Ganga ii. Kosi\nASX ‘ kale\n<j S c. Brahmaputra iii. Jatinga\nTr e\\ d. Meghna iv. Chenab\ni }\na ca Code:\nff (a) (b) = (ec) (dd)\na (A) (iv) (ii) (ii) (i)\n(B) (fi) fv) ft\n(C) (i) ii (it) (iv)\nDr (iv) ) (iti)"
+    },
+    {
+      "question_no": 45,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: B"
+      ],
+      "question": "Which of the following Committee was formed for the amendment in Fiscal Responsibility and Budget Management (FRBM) Act, 2003 ?",
+      "raw_text": "45. Which of the following Committee\nwas formed for the amendment in\nFiscal Responsibility and Budget\nManagement (FRBM) Act, 2003 ?\n(A) Vijay Kelkar Committee\n\nBy N. K. Singh Committee\n(C) C. Rangarajan Committee\n(D) Nachiket Mor Committee"
+    },
+    {
+      "question_no": 46,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, B",
+        "option labels found: C, D"
+      ],
+      "question": "Which two (02) of the following indicators included by NITI Aayog in its National Multidimensional Poverty Index have not been included by UNDP in its Multidimensional Poverty Index ? i. Bank Account... ~ ii. Maternal Health iii. Electricity iv. Cooking Fuel WAT fi) and (ii) —(B) (iti) and (iv)",
+      "raw_text": "46. Which two (02) of the following\nindicators included by NITI Aayog\nin its National Multidimensional\nPoverty Index have not been\nincluded by UNDP in its\nMultidimensional Poverty Index ?\ni. Bank Account... ~\nii. Maternal Health\niii. Electricity\niv. Cooking Fuel\nWAT fi) and (ii) —(B) (iti) and (iv)\n(C) (i)and (iii) (D) (i) and (iv)\nee A eae ini a ae\nJ"
+    },
+    {
+      "question_no": 47,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "With reference to solar energy potential of States in India, consider the following statements. 1. Rajasthan has the highest solar energy potential. 2. Sikkim has the lowest solar energy potential. Choose the correct option.",
+      "raw_text": "47. With reference to solar energy\npotential of States in India,\nconsider the following statements.\n\n1. Rajasthan has the highest\nsolar energy potential.\n2. Sikkim has the lowest solar\nenergy potential.\nChoose the correct option.\n_4A) Both the statements (1) and\n(2) are correct\n——— (B) Only the statement (1) is\nAgs correct\n©\\\\ (C) Only the statement (2) is\nit c correct\n““/<) (D) Both the statements (1) and\n“+f (2) are incorrect\na"
+    },
+    {
+      "question_no": 48,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, D",
+        "option labels found: B, C"
+      ],
+      "question": "Arrange the following socio-religious organisations in the correct chronological order based on their year of establishment. i. Brahmo Samaj ii. Brahmo Samaj of South India iii. Sadharan Brahmo Samaj iv. Atmiya Sabha WAS fi) fi) iti) iv)",
+      "raw_text": "48. Arrange the following socio-religious\norganisations in the correct\nchronological order based on their\nyear of establishment.\n\ni. Brahmo Samaj\n\nii. Brahmo Samaj of South India\niii. Sadharan Brahmo Samaj\niv. Atmiya Sabha\n\nWAS fi) fi) iti) iv)\n(B) (iv) (iii) (i)\n(C) iy) @ fi) Gti\n(1D) @&) Ww tw"
+    },
+    {
+      "question_no": 50,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "Which of the following texts is considered to be the best text in Pali language ?",
+      "raw_text": "50. Which of the following texts is\nconsidered to be the best text in\nPali language ?\n(A) Dipavamsa\n(B) Mahavamsa\nY2f Vinay Pitaka\n(D) Milinda Panha\nNe,\n5] $24 - 25\n\n|"
+    },
+    {
+      "question_no": 51,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "Which of the following statements | is/are correct regarding Pt. Lochan Prasad Pandey ? 1. In the year 1921, Pt. Lochan Prasad Pandey established Chhattisgarh Gaurav Pracharak Mandaii. 2. The Oriya ruler of Wamanda State conferred the title of Kavya Vinod’ to Pt. Lochan Prasad Pandey. 3. Pt. Lochan Prasad Pandey was a scholar of Sanskrit, English, Bangla and Oriya languages besides Hindi. 4. Under the Editorship of Pt. Lochan Prasad Pandey, two volumes of archaeological articles were published in the Ac year 1932 and 1937.",
+      "raw_text": "51. Which of the following statements |\nis/are correct regarding Pt. Lochan\n\nPrasad Pandey ?\n\n1. In the year 1921, Pt. Lochan\nPrasad Pandey established\nChhattisgarh Gaurav Pracharak\nMandaii.\n\n2. The Oriya ruler of Wamanda\nState conferred the title of Kavya\nVinod’ to Pt. Lochan Prasad\nPandey.\n\n3. Pt. Lochan Prasad Pandey was\na scholar of Sanskrit, English,\nBangla and Oriya languages\nbesides Hindi.\n\n4. Under the Editorship of\nPt. Lochan Prasad Pandey,\ntwo volumes of archaeological\narticles were published in the\n\nAc year 1932 and 1937.\n(A) Only 1\n=| (B) Only 2\nAig / (C) Only 2 and 3\nws (D}All of the above"
+    },
+    {
+      "question_no": 52,
+      "confidence": 0.83,
+      "issues": [
+        "missing option labels: B",
+        "fuzzy option labels inferred: A",
+        "option labels found: A, C, D"
+      ],
+      "question": "Consider the following statements about the Gram Sabha. 1. Every resident of the Gram Panchayat territory shall be its member. 2. AGram Sabha shall meet at least | once in every three months. 3. In the absence of Sarpanch and Deputy Sarpanch, the senior most panch shall preside over the Gram Sabha meeting. 4. A Gram Sabha meeting shall be summoned within thirty days if more than one-third of the total members of Gram Sabha so demand in writing. Which one of the following option is correct in respect of the above statements ?",
+      "raw_text": "52. Consider the following statements\nabout the Gram Sabha.\n\n1. Every resident of the Gram\nPanchayat territory shall be its\nmember.\n\n2. AGram Sabha shall meet at least\n\n| once in every three months.\n\n3. In the absence of Sarpanch and\nDeputy Sarpanch, the senior\nmost panch shall preside over\nthe Gram Sabha meeting.\n\n4. A Gram Sabha meeting shall be\nsummoned within thirty days\nif more than one-third of the\ntotal members of Gram Sabha\nso demand in writing.\n\nWhich one of the following option\n\nis correct in respect of the above\n\nstatements ?\n\n4A) Both 1 and 2 (B) Both 1 and 3\n\n(C) Both 2and3 (D) Both 2 and 4\na NB hh Me aac tlt\n> | $24 - 25"
+    },
+    {
+      "question_no": 53,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "The highest peak located in the Khuriya plateau is",
+      "raw_text": "53. The highest peak located in the\nKhuriya plateau is\n(A) Pandrapaat\n(B) Burjudih\n\nSey t Bhanvar Mountain\n\n(D) Tendupat"
+    },
+    {
+      "question_no": 57,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, B",
+        "option labels found: C, D"
+      ],
+      "question": "A dish similar to ‘kheer’ in Chhattisgarh is AN Limad By Khurmi",
+      "raw_text": "57. A dish similar to ‘kheer’ in\nChhattisgarh is\nAN Limad By Khurmi\n(C) Choulesar (D) Taramai"
+    },
+    {
+      "question_no": 58,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: B",
+        "option labels found: A, C, D"
+      ],
+      "question": "In which Hotel of Raipur was the “Raipur Conspiracy Case” planned ?",
+      "raw_text": "58. In which Hotel of Raipur was the\n“Raipur Conspiracy Case” planned ?\n(A) Imperial Hotel\nNiza New India Hotel\n(C) Raj Hotel\n(D) Oriental Hotel"
+    },
+    {
+      "question_no": 60,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: A",
+        "option labels found: B, C, D"
+      ],
+      "question": "Group entertainment song of Ghotul is Al (4) Kaksar",
+      "raw_text": "60. Group entertainment song of\nGhotul is\nAl (4) Kaksar\nos (B) Lorik Chanda\nPy (C) Hullkipata\nWw (D) Dola Para\nA"
+    },
+    {
+      "question_no": 61,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: C, D",
+        "option labels found: A, B"
+      ],
+      "question": "Which of the following statements related to Kharun river is/are correct ? 1. It is an important river of the Durg district. 2. It is originated from the | Pentechua of Chorhanala. 3. This river flows for about 80.5 km | in the Durg-Raipur border. 4. This river flows at elevations | ranging from 300 m to 150 m | depending on the slope. |",
+      "raw_text": "61. Which of the following statements\nrelated to Kharun river is/are\ncorrect ?\n1. It is an important river of the\nDurg district.\n2. It is originated from the |\nPentechua of Chorhanala.\n3. This river flows for about 80.5 km |\nin the Durg-Raipur border.\n4. This river flows at elevations |\nranging from 300 m to 150 m |\ndepending on the slope. |\n(A) Only 1 and 2 |\n(B) Only 1,2 and3 |\nyey Only 1, 2 and 4\nUR All of the above\nans ibe Lt\n3 ]"
+    },
+    {
+      "question_no": 62,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "‘Bihai’ in Chhattisgarh is a type of",
+      "raw_text": "62. ‘Bihai’ in Chhattisgarh is a type of\n(A) Dance (B) Chouk\n(C) Folk song WF Folk drama"
+    },
+    {
+      "question_no": 63,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "Consider the following statements : I. 75 Gram Panchayats of Surajpur district in Chhattisgarh declared as child marriage free Gram Panchayats. Il. This achievement is the outcome of district’s flagship programme ‘healthy woman, empowered families’. IN Which of the statements given above ¥3 is/are correct ?",
+      "raw_text": "63. Consider the following statements :\n\nI. 75 Gram Panchayats\nof Surajpur district in\nChhattisgarh declared as\nchild marriage free Gram\nPanchayats.\n\nIl. This achievement is the\noutcome of district’s flagship\nprogramme ‘healthy woman,\nempowered families’.\n\nIN Which of the statements given above\n¥3 is/are correct ?\na (A) Only ()\nL|s (B)_ Only (I)\n“s/) — 4€) Both (I) and (I)\nY (D) Neither () nor (I)"
+    },
+    {
+      "question_no": 64,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "The following statement regarding housing is related to which tribe ? “Traditionally three types of houses are built, Khaddar Ghar or Ban Khaddar, Bhithi Ghar and Ladi or Nan-Ak-Ladi.”",
+      "raw_text": "64. The following statement regarding\nhousing is related to which tribe ?\n“Traditionally three types of houses\nare built, Khaddar Ghar or Ban\nKhaddar, Bhithi Ghar and Ladi or\nNan-Ak-Ladi.”\n\n(A) Baiga Tribe\n\n(B) Dorla Tribe\n\n(C) Munda Tribe\n\n{By None of the above"
+    },
+    {
+      "question_no": 65,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "In the Constitution of India, Nagar Panchayat is mentioned in",
+      "raw_text": "65. In the Constitution of India, Nagar\nPanchayat is mentioned in\n(A) Part IX\n(B) Part IXA\n(C) Part IXB\niby Fifth Schedule"
+    },
+    {
+      "question_no": 66,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "The people of Ratanpur were deeply saddened by Bimbaji’s death. Which foreign traveler mentioned this ?",
+      "raw_text": "66. The people of Ratanpur were deeply\nsaddened by Bimbaji’s death. Which\nforeign traveler mentioned this ?\n(A) Colebrook  (B) George Forster\n(C) Hieun Tsang ie Blunt\n\nJ $24 -25"
+    },
+    {
+      "question_no": 67,
+      "confidence": 0.64,
+      "issues": [
+        "missing option labels: A, C, D",
+        "option labels found: B"
+      ],
+      "question": "Based on the Chhattisgarh SDG District Level Progress Report 2023, match the SDG goals in Column -— | with the top-performing districts in Column - II. Column - I Column - II 1. Goal 05 a. Kabirdham 2. Goal 08 b. Raipur 3. Goal 10 c. Bilaspur 4. Goal 13 d. Raigarh > N (1) (2) (3) (4) <P \\ MAY (a) (&) (a) Wages [Se",
+      "raw_text": "67. Based on the Chhattisgarh SDG\nDistrict Level Progress Report 2023,\nmatch the SDG goals in Column -— |\nwith the top-performing districts in\nColumn - II.\n\nColumn - I Column - II\n1. Goal 05 a. Kabirdham\n2. Goal 08 b. Raipur\n3. Goal 10 c. Bilaspur\n4. Goal 13 d. Raigarh\n> N (1) (2) (3) (4)\n<P\n\\ MAY (a) (&) (a)\nWages [Se\ny/ (B) (b) (2 (2 (a)\n* 4,\n(4 Oo &) @\n(Dl) @ () (b) (a)"
+    },
+    {
+      "question_no": 68,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: A",
+        "option labels found: B, C, D"
+      ],
+      "question": "Match the classical music/dance : given in Column - I with the related famous personalities of Chhattisgarh given in Column -— II. Column - I Column - II 1. Kathak a. Indrani Chakravarty 2. Tabla b. Madhurima Chandra Shekhar Shastri 3. Sitar c. Arti Jain 4. Bharatnatyam d. Mukund Narayan Bhale (1) (2) (3) (4) UAT (a) (b) (co) (d)",
+      "raw_text": "68. Match the classical music/dance :\ngiven in Column - I with the related\nfamous personalities of Chhattisgarh\ngiven in Column -— II.\n\nColumn - I Column - II\n1. Kathak a. Indrani\nChakravarty\n2. Tabla b. Madhurima\nChandra\nShekhar\nShastri\n3. Sitar c. Arti Jain\n4. Bharatnatyam d. Mukund\nNarayan\nBhale\n(1) (2) (3) (4)\nUAT (a) (b) (co) (d)\n(B) (c) (da) (a) (b)\n(C) (bh) () (a (@\n(D) (@) (a) (c) (db)\n0] $24 - 25"
+    },
+    {
+      "question_no": 69,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: C",
+        "option labels found: A, B, D"
+      ],
+      "question": "Which of the following option is not included in the composition of a Janpad Panchayat ?",
+      "raw_text": "69. Which of the following option is not\nincluded in the composition of a\nJanpad Panchayat ?\n\n(A) All members of the State\nLegislative Assembly returned\nfrom the Constituencies which\nwholly fall within the Janpad\nPanchayat Area.\n\n(B) All members of the State\nLegislative Assembly returned\nfrom the Constituencies which\npartly fall within the Janpad\n\neran Ha Area.\n\nOne-fifth (1/5) of the Sarpanchas\nin the territorial area of the\nJanpad Panchayat by rotation\nfor a period of one year as\nprescribed authority may\ndetermine by drawing lots.\n\n_{D) Elected members ofthe LokSabha\nwhose part of Constituency falls\nfully or partly in the Janpad\nPanchayat Area."
+    },
+    {
+      "question_no": 70,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "Which of the following statements is/are correct about the Dry Sal Forest of Chhattisgarh ? 1. Dry Sal Forests are found on the slopes in Kanai, Ras, Pidia and Patkura Development Blocks. 2. Dry Sal Forest reaches a height of 21 to 22 m. 3. Dry Sal Forests are found in flat plateau region with laterite soil where drainage is good. 4. Dry Sal Forests are found in Dongargarh and Khairagarh | range.",
+      "raw_text": "70. Which of the following statements\nis/are correct about the Dry Sal\nForest of Chhattisgarh ?\n\n1. Dry Sal Forests are found on the\nslopes in Kanai, Ras, Pidia and\nPatkura Development Blocks.\n\n2. Dry Sal Forest reaches a height\nof 21 to 22 m.\n\n3. Dry Sal Forests are found in flat\nplateau region with laterite soil\nwhere drainage is good.\n\n4. Dry Sal Forests are found in\nDongargarh and Khairagarh\n\n| range.\n\n(A) Only 1\n\ny \\ (B) Only 1 and 2\n; (C) Only 1, 2 and 3\n(Dy All of the above\n1] $24 - 25\n\n|"
+    },
+    {
+      "question_no": 71,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "During which Movement did V. V. Giri visited Rajnandgaon ?",
+      "raw_text": "71. During which Movement did\nV. V. Giri visited Rajnandgaon ?\n\n(A) First Mill Labour Movement\n\n(B) Second Mill Labour Movement\n\n(C) Third Mill Labour Movement\n\n(Dy Quit India Movement"
+    },
+    {
+      "question_no": 72,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: B",
+        "option labels found: A, C, D"
+      ],
+      "question": "‘Kothali’ waterfall is located in",
+      "raw_text": "72. ‘Kothali’ waterfall is located in\n(A) Kanhar River(By Rihand River\n(C) Banas River (D) Mand River"
+    },
+    {
+      "question_no": 73,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "Where is the ‘Bees Duariya’ Temple located ?",
+      "raw_text": "73. Where is the ‘Bees Duariya’ Temple\nlocated ?\n\n(A) Malhar\n\n(B) Talagaon\n\n(C) Turturiya\n\n“by Ratanpur"
+    },
+    {
+      "question_no": 74,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "Which of the following statements is/are correct regarding the Chief Minister Amrit Yojana ? 1. This scheme has been operational since 2016. 2. This scheme is being implemented as a Pilot Project in Kabirdham and Bastar districts. 3. Under this scheme, flavored soy milk is provided. 4. This scheme is being implemented in 2554 primary and 1165 secondary schools in the districts identified for the Pilot Project.",
+      "raw_text": "74. Which of the following statements\nis/are correct regarding the Chief\nMinister Amrit Yojana ?\n\n1. This scheme has been\noperational since 2016.\n\n2. This scheme is being\nimplemented as a Pilot Project\nin Kabirdham and Bastar\ndistricts.\n\n3. Under this scheme, flavored soy\nmilk is provided.\n\n4. This scheme is being\nimplemented in 2554 primary\nand 1165 secondary schools in\nthe districts identified for the\nPilot Project.\n\n(A) Only 1\n(B) Only 2\n| (C) Only 3\nAD) All of the above\n2]"
+    },
+    {
+      "question_no": 76,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: B"
+      ],
+      "question": "What is the period for providing temporary shelter at Sakhi One Stop Centre ?",
+      "raw_text": "76. What is the period for providing\ntemporary shelter at Sakhi One Stop\nCentre ?\n\n(A) Upto 05 days\nBj) Upto 07 days\n\n(C) Upto 15 days\n\n\\ (D) Upto 21 days"
+    },
+    {
+      "question_no": 78,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: B",
+        "option labels found: A, C, D"
+      ],
+      "question": "Match the minerals found in Chhattisgarh (Column — ]) with their locations (Column — II). Column - I Column - II 1. Quartzite a. Pendri 2. Mica b. Chiraipani 3. Lead c. Gudhipurwa 4. Fireclay d. Bhalai (Lundra) (1) (2) (3) (4)",
+      "raw_text": "78. Match the minerals found in\nChhattisgarh (Column — ]) with\ntheir locations (Column — II).\n\nColumn - I Column - II\n1. Quartzite a. Pendri\n2. Mica b. Chiraipani\n3. Lead c. Gudhipurwa\n4. Fireclay d. Bhalai\n(Lundra)\n(1) (2) (3) (4)\n(A) (a) (c) (b) (d)\nUBr (d) (c) (a) (b)\n(C) (ad) (b) (ce) (a)\n(D) (b) (a) (a (ce)\n3 $24 -25\n\n|"
+    },
+    {
+      "question_no": 79,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "In which year was the growth rate | (constant prices 2011-12) in the contribution of electricity, gas and water supply to the Gross Domestic Product of Chhattisgarh been the lowest ?",
+      "raw_text": "79. In which year was the growth rate |\n\n(constant prices 2011-12) in the\n\ncontribution of electricity, gas and\n\nwater supply to the Gross Domestic\n\nProduct of Chhattisgarh been the\n\nlowest ?\n\n(A) 2022-23 (B) 2023-24\n\n(C) 2024-25 {By Never been"
+    },
+    {
+      "question_no": 80,
+      "confidence": 0.95,
+      "issues": [
+        "duplicate option label A",
+        "unexpected option order: B, A, C, D"
+      ],
+      "question": "Assertion (A) : Chhattisgarh Accelerated Learning for Knowledge Economy (CHAK) is being implemented to improve school education in Chhattisgarh. Reason (R) : The School Education Department is making arrangements to provide education to the students based on their mother tongue at the primary level. In the above question, an Assertion (A) and a Reason (R) is given. Choose the correct option. SAT Both (A) and (R) are correct and the (R) is the correct explanation of the (A)",
+      "raw_text": "80. Assertion (A) : Chhattisgarh\n\nAccelerated Learning for Knowledge\n\nEconomy (CHAK) is being\n\nimplemented to improve school\n\neducation in Chhattisgarh.\n\nReason (R) : The School Education\n\nDepartment is making arrangements\n\nto provide education to the students\n\nbased on their mother tongue at the\nprimary level.\n\nIn the above question, an Assertion (A)\n\nand a Reason (R) is given. Choose the\n\ncorrect option.\nSAT Both (A) and (R) are correct and\nthe (R) is the correct explanation\nof the (A)\n\n(B) Both (A) and (R) are correct,\nbut the (R) is not correct\nexplanation of the (A)\n\n(C) The (A) is correct, but the (R) is\nincorrect\n\n(D) The (A) is incorrect, but the (R)\nis correct"
+    },
+    {
+      "question_no": 81,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, D",
+        "option labels found: B, C"
+      ],
+      "question": "In the State Budget of Chhattisgarh 2025 — 26, the budget allocation respectively for PM-JANMAN Road Construction Yojana and Mukhya Mantri Samagra Grameen Yojana was UAr Rs. 500 Crores and Rs. 200 Crores",
+      "raw_text": "81. In the State Budget of Chhattisgarh\n\n2025 — 26, the budget allocation\n\nrespectively for PM-JANMAN Road\n\nConstruction Yojana and Mukhya\n\nMantri Samagra Grameen Yojana was\n\nUAr Rs. 500 Crores and\nRs. 200 Crores\n\n(B) Rs. 3,200 Crores and\nRs. 5,500 Crores\n\n(C) Rs. 875 Crores and\nRs. 738 Crores\n\nLo Acs D) Rs. 3,500 Crores and\ney Rs. 1,850 Crores\n\nBATH\ny"
+    },
+    {
+      "question_no": 82,
+      "confidence": 0.83,
+      "issues": [
+        "missing option labels: B",
+        "fuzzy option labels inferred: A",
+        "option labels found: A, C, D"
+      ],
+      "question": "Which of the following statements are not correct in the context of P.M. KUSUM Scheme ? i. This Scheme is to make the agriculture sector diesel free. ii. A provision of Rs. 326 crore has been made for this Scheme in the current budget (2025-26) of Chhattisgarh. iii. The Central Government provides subsidy upto 30% or 60% of the total cost for this Scheme. iv. Under this Scheme, Farmers can install solar power plants to 2 MW on barren/ fallow land.",
+      "raw_text": "82. Which of the following statements\nare not correct in the context of\n\nP.M. KUSUM Scheme ?\n\ni. This Scheme is to make the\nagriculture sector diesel free.\n\nii. A provision of Rs. 326 crore has\nbeen made for this Scheme in\nthe current budget (2025-26) of\nChhattisgarh.\n\niii. The Central Government provides\nsubsidy upto 30% or 60% of the\ntotal cost for this Scheme.\n\niv. Under this Scheme, Farmers\ncan install solar power plants to\n2 MW on barren/ fallow land.\n\nJAX (iii) and (iv) $%) (ii) and (iv)\n\n(C) fijand (iv) (D) (ii) and (ii)"
+    },
+    {
+      "question_no": 83,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: D"
+      ],
+      "question": "Which of the following statements is/are not correct about low rainfall areas of Chhattisgarh ? 1. Low rainfall areas receives 1300 to 1400 mm of rainfall. 2. It does not includes most part of the North-eastern Baghelkhand and the central part of the Mahanadi basin. 3. The Central part of the Mahanadi basin, including the Trans-Shivnath plains, the Mahanadi Shivnath Doab region and the lower valleys of the Hasdeo and Arpa rivers receives rainfall between 1100 mm — 1200 mm. 4. In Chhattisgarh, the lowest rainfall occurs in the 03 Eastern parts of the State.",
+      "raw_text": "83. Which of the following statements\nis/are not correct about low rainfall\nareas of Chhattisgarh ?\n\n1. Low rainfall areas receives 1300\nto 1400 mm of rainfall.\n\n2. It does not includes most part of\nthe North-eastern Baghelkhand\nand the central part of the\nMahanadi basin.\n\n3. The Central part of the\nMahanadi basin, including\nthe Trans-Shivnath plains,\nthe Mahanadi Shivnath Doab\nregion and the lower valleys\nof the Hasdeo and Arpa rivers\nreceives rainfall between\n1100 mm — 1200 mm.\n\n4. In Chhattisgarh, the lowest\nrainfall occurs in the 03 Eastern\nparts of the State.\n\n(A) Only 1\n\n| (B) Only 2 and 3\n| (C) Only 1, 2 and 4\n\\pr All of the above\nJ $24 - 25\nee Se"
+    },
+    {
+      "question_no": 84,
+      "confidence": 0.9,
+      "issues": [
+        "duplicate option label A",
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "Assertion (A) : Indravati Sanctuary attained the status of a National Park in 1981. Reason (R) : Indravati National Park was later declared a Tiger Reserve in 1983 under Project Tiger. In the above question, an Assertion (A) and a Reason (R) is given. Choose the correct option.",
+      "raw_text": "84. Assertion (A) : Indravati Sanctuary\nattained the status of a National Park\n\nin 1981.\n\nReason (R) : Indravati National Park\n\nwas later declared a Tiger Reserve in\n\n1983 under Project Tiger.\n\nIn the above question, an Assertion (A)\n\nand a Reason (R) is given. Choose the\n\ncorrect option.\nJA) Both (A) and (R) are true and (R)\nis the correct explanation of (A)\n\n(B) Both (A) and (R) are true,\nbut (R) is not the correct\nexplanation of (A)\n\n(C) (A) is true, but (R) is false\n\n(D) (A) is false, but (R) is true"
+    },
+    {
+      "question_no": 85,
+      "confidence": 0.83,
+      "issues": [
+        "missing option labels: B",
+        "fuzzy option labels inferred: A",
+        "option labels found: A, C, D"
+      ],
+      "question": "Which facts are correct regarding the current irrigation potential of Chhattisgarh State ? i. At present the irrigation potential of the State is 21.76 lakh hectares. ii. At present 2514 minor irrigation schemes have been in the State. iii. 49.50% of the groundwater is being used in the State. iv. After the formation of the State additional irrigation capacity has been developed in an area of 10.48 lakh hectares.",
+      "raw_text": "85. Which facts are correct regarding\nthe current irrigation potential of\n\nChhattisgarh State ?\n\ni. At present the irrigation\npotential of the State is\n21.76 lakh hectares.\n\nii. At present 2514 minor\nirrigation schemes have been\nin the State.\n\niii. 49.50% of the groundwater is\nbeing used in the State.\n\niv. After the formation of the State\nadditional irrigation capacity\nhas been developed in an area\nof 10.48 lakh hectares.\n\nLA) (i), (ii) and (iii) (B) (i) and (ii)\n\n(C) (iv) and (i) (D) (ii) and (ii) |"
+    },
+    {
+      "question_no": 86,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: B",
+        "option labels found: A, C, D"
+      ],
+      "question": "In Chhattisgarh State, division of Gram Panchayats into wards is done",
+      "raw_text": "86. In Chhattisgarh State, division of\n\nGram Panchayats into wards is\n\ndone\n\n(A) By the Governor\n\nON {Br By the State Election Commission\n<o)\\ (C) By the Collector of the District\nf(D) By the concerned Gram Sabha\n6"
+    },
+    {
+      "question_no": 87,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: A",
+        "option labels found: B, C, D"
+      ],
+      "question": "Who was the ruler of the Surguja State at the time of the Oraon Rebellion in 1918 ? UA) Shiv Raj Singh",
+      "raw_text": "87. Who was the ruler of the Surguja\nState at the time of the Oraon\nRebellion in 1918 ?\n\nUA) Shiv Raj Singh\n(B) Ajit Singh\n(C) Ramanuj Sharan\n(D) Indrapratap Sharan"
+    },
+    {
+      "question_no": 88,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "Which of the following statements regarding the Chhattisgarh Industrial Development Policy 2024-30 is/are correct ? 1. The Chhattisgarh Industrial Development Policy 2024-30 will be effective from the date 1** November 2024 until 31° March 2030. 2. Under the Chhattisgarh Industrial Development Policy 2024-30, on the basis of the size of investment industries have been classified into 6 categories. 3. Under the Chhattisgarh Industrial Development Policy 2024-30, for industrial investment promotion entrepreneurs/investors have been classified into 7 categories. 4. Nutraceutical product enterprises are included in the list of Thrust : Sector Enterprises.",
+      "raw_text": "88. Which of the following statements\nregarding the Chhattisgarh\nIndustrial Development Policy\n2024-30 is/are correct ?\n\n1. The Chhattisgarh Industrial\nDevelopment Policy 2024-30\nwill be effective from the date\n1** November 2024 until\n31° March 2030.\n\n2. Under the Chhattisgarh\nIndustrial Development Policy\n2024-30, on the basis of the size of\ninvestment industries have been\nclassified into 6 categories.\n\n3. Under the Chhattisgarh\nIndustrial Development\nPolicy 2024-30, for industrial\ninvestment promotion\nentrepreneurs/investors have\nbeen classified into 7 categories.\n\n4. Nutraceutical product enterprises\nare included in the list of Thrust\n\n: Sector Enterprises.\nO\\ (A) Only 1\n\nis} (B) Only 2\n\ny (C) Only 1,3 and 4\n\nV), (Dy All of the above"
+    },
+    {
+      "question_no": 89,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: D",
+        "option labels found: A, B, C"
+      ],
+      "question": "Which of the following tribes believe in spirits ?",
+      "raw_text": "89. Which of the following tribes believe\n\nin spirits ?\n(A) Toda\n(B) Kota\n(C) Oraon\n~{By All of the above\na $24 - 25"
+    },
+    {
+      "question_no": 90,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: A",
+        "option labels found: B, C, D"
+      ],
+      "question": "Which of the following statements is/are correct regarding agriculture in Dandakaranya region of Chhattisgarh ? 1. Pulses are sown on 8% of the total sown land of the Dandakaranya region. 2. Jowar is sown on 1% of the total sown land of the Dandakaranya region. 3. Under Kharif Chana, Tivra, Peas, Moong and Urad are cultivated. 4. Kodo and Kutki are sown on 25% of the total sown land of the Dandakaranya region. 4A Only 1",
+      "raw_text": "90. Which of the following statements\nis/are correct regarding agriculture\nin Dandakaranya region of\nChhattisgarh ?\n\n1. Pulses are sown on 8% of the total\nsown land of the Dandakaranya\nregion.\n\n2. Jowar is sown on 1% of the total\nsown land of the Dandakaranya\nregion.\n\n3. Under Kharif Chana, Tivra,\nPeas, Moong and Urad are\ncultivated.\n\n4. Kodo and Kutki are sown on\n25% of the total sown land of\nthe Dandakaranya region.\n\n4A Only 1\n(B) Only 2 and 3\n(C) Only 1, 2 and 4\n(D) Only 1 and 4"
+    },
+    {
+      "question_no": 91,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "Select the correct idiom for “to work very hard”.",
+      "raw_text": "91. Select the correct idiom for “to work\nvery hard”.\n\nBY Ay Panhi Chamkana\no\\ (B) Panhi Torna\n\n|= (C) Panhi Khiyana\n«// (D) Panhi Uchana"
+    },
+    {
+      "question_no": 92,
+      "confidence": 0.88,
+      "issues": [
+        "missing option labels: A",
+        "option labels found: B, C, D"
+      ],
+      "question": "What percentage of subsidy is given to small marginal and other farmers respectively for providing sprinkler sets and drip systems under PMKSY ? Ay 55% small marginal farmers, 45% other farmers",
+      "raw_text": "92. What percentage of subsidy is given\nto small marginal and other farmers\nrespectively for providing sprinkler\nsets and drip systems under PMKSY ?\n\nAy 55% small marginal farmers,\n45% other farmers\n(B) 45% small marginal farmers,\n55% other farmers\n(C) 50% small marginal farmers,\n40% other farmers\n(D) 65% small marginal farmers,\n55% other farmers\n8 ]"
+    },
+    {
+      "question_no": 93,
+      "confidence": 0.78,
+      "issues": [
+        "duplicate option label B",
+        "missing option labels: D",
+        "fuzzy option labels inferred: B",
+        "option labels found: A, B, C"
+      ],
+      "question": "The theme “One Expression, Supreme Creation” is related to",
+      "raw_text": "93. The theme “One Expression,\nSupreme Creation” is related to\n(A) Rajyotsava — 2025\n(B) Chakradhar Samaroh — 2025\n(C) Sirpur Mahotsav — 2025\n{Bj} Bharat Rang Mahotsav - 2025"
+    },
+    {
+      "question_no": 95,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: C, D",
+        "option labels found: A, B"
+      ],
+      "question": "What was the installed capacity (in megawatts) for electricity utilization in Chhattisgarh State as of 2024 ?",
+      "raw_text": "95. What was the installed capacity (in\nmegawatts) for electricity utilization\nin Chhattisgarh State as of 2024 ?\nx (A) 2840 megawatts\nQ\\ (B) 138.70 megawatts\n‘e) 4€) 2850 megawatts\nfo\n7 D) 2978.70 megawatts\nJ g"
+    },
+    {
+      "question_no": 96,
+      "confidence": 0.95,
+      "issues": [
+        "fuzzy option labels inferred: A"
+      ],
+      "question": "Which of the following statements is/are not correct about the rule of Panduvansha in Chhattisgarh ? 1. Panduvansha established their State in Dakshin Kosal after the power of Sharabhpuriya Dynasty ended. 2. Harshagupta has been called Param-Maheswar. 3. During the reign of Harsha Gupta, Vishnu Temple was built in the capital, Sirpur. 4. Tivar Dev was succeeded by Harsha Gupta, Mahannan and Chandra Gupta consecutively.",
+      "raw_text": "~ 96. Which of the following statements\nis/are not correct about the rule of\nPanduvansha in Chhattisgarh ?\n1. Panduvansha established their\nState in Dakshin Kosal after\nthe power of Sharabhpuriya\nDynasty ended.\n2. Harshagupta has been called\nParam-Maheswar.\n3. During the reign of Harsha\nGupta, Vishnu Temple was built\nin the capital, Sirpur.\n4. Tivar Dev was succeeded by\nHarsha Gupta, Mahannan and\nChandra Gupta consecutively.\nAA) Only 3 and 4\n(B) Only 3\n(C) Only 1 and 2\n(D) None of the above\n] $24 -25"
+    },
+    {
+      "question_no": 98,
+      "confidence": 0.76,
+      "issues": [
+        "missing option labels: A, B",
+        "option labels found: C, D"
+      ],
+      "question": "According to the Provisions of the Panchayats (Extension to the Scheduled Areas) Act, 1996 a Ta : ™ Village shall ordinarily consist of ‘| S\\o\\ 1. Hamlet or group of hamlets / H TY 2. Comprising a community A 3. A minimum population of 200 *_7 : 4. Managing its affairs in accordance with traditions and customs gon 15, 2 8 (B) 1,2,4",
+      "raw_text": "98. According to the Provisions of\nthe Panchayats (Extension to the\nScheduled Areas) Act, 1996 a\nTa : ™ Village shall ordinarily consist of\n‘| S\\o\\ 1. Hamlet or group of hamlets\n/ H TY 2. Comprising a community\nA 3. A minimum population of 200\n*_7 : 4. Managing its affairs in\naccordance with traditions and\ncustoms\ngon 15, 2 8 (B) 1,2,4\n(C) 2,3,4 (D) 1, 3,4"
+    }
+  ]
+}

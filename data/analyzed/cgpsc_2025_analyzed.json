@@ -3,7 +3,7 @@
   "taxonomy_version": "cgpsc-taxonomy-v1.0.0",
   "exam": "CGPSC Prelims",
   "year": 2025,
-  "source_file": "C:\\CGPSC-projects\\reader\\data\\raw_text\\ocr_output.txt",
+  "source_file": "C:\\CGPSC-projects\\reader\\data\\years\\2025\\ocr_output.txt",
   "summary": {
     "questions": 100,
     "subjects": {

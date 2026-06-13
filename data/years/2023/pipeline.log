@@ -1,0 +1,95 @@
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:06:05] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:06:05] Output  : C:\CGPSC-projects\reader\data\years\2023
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:10:27] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:10:27] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:10:28] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:10:28] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:18:09] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:18:09] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:18:13] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:18:13] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:20:10] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:20:10] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:20:11] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:20:11] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:36:38] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:36:38] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:36:39] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:36:39] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:37:25] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:37:25] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:37:26] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:37:26] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[18:42:47] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[18:42:47] Output  : C:\CGPSC-projects\reader\data\years\2023
+[18:42:48] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:42:48] Starting: ocr
+  fail  ocr                    0.0s  — 'module' object is not callable
+[18:42:48] Pipeline aborted (use --no-stop to continue on errors).
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[19:45:30] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[19:45:30] Output  : C:\CGPSC-projects\reader\data\years\2023
+[19:45:31] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[19:45:31] Starting: ocr
+  fail  ocr                    0.0s  — 'module' object is not callable
+[19:45:31] Pipeline aborted (use --no-stop to continue on errors).
+
+============================================================
+  CGPSC Pipeline — Year 2023
+============================================================
+[19:51:46] PDF     : C:\CGPSC-projects\reader\data\pdfs\2023.pdf
+[19:51:46] Output  : C:\CGPSC-projects\reader\data\years\2023
+[19:51:47] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[19:51:47] Starting: ocr
+  ok  ocr                    0.0s
+[19:51:47] Starting: parser
+  ok  parser                 0.2s
+[19:51:47] Starting: validator
+  ok  validator              0.0s
+[19:51:47] Starting: analyzer
+  ok  analyzer               0.5s
+[19:51:48] Starting: analyzer_validator
+  ok  analyzer_validator     0.1s
+[19:51:48] Starting: statistics
+  ok  statistics             0.0s
+[19:51:48] Starting: ingest
+  ok  ingest                 0.1s

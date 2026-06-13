@@ -1,0 +1,23 @@
+{
+  "2025": {
+    "year": 2025,
+    "exam": "CGPSC Prelims",
+    "total_questions": 100,
+    "taxonomy_version": "cgpsc-taxonomy-v1.0.0",
+    "ingested_at": "2026-06-13T17:45:24.322490"
+  },
+  "2023": {
+    "year": 2023,
+    "exam": "CGPSC Prelims",
+    "total_questions": 5,
+    "taxonomy_version": "cgpsc-taxonomy-v1.0.0",
+    "ingested_at": "2026-06-13T19:51:48.538508"
+  },
+  "2024": {
+    "year": 2024,
+    "exam": "CGPSC Prelims",
+    "total_questions": 7,
+    "taxonomy_version": "cgpsc-taxonomy-v1.0.0",
+    "ingested_at": "2026-06-13T19:51:49.185319"
+  }
+}

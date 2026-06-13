@@ -1,37 +1,57 @@
 from pathlib import Path
-from clean_text import clean_text
 
+from clean_text import clean_text
 from pdf_to_images import pdf_to_images
 from ocr import image_to_text
 
-PDF_FILE = "data/pdfs/2025.pdf"
 
-images = pdf_to_images(
-    PDF_FILE,
-    "data/images"
-)
+def run_ocr_pipeline(pdf_file, output_file):
+    """
+    OCR pipeline.
 
-full_text = ""
+    Args:
+        pdf_file: Path to PDF
+        output_file: Path to OCR text output
+    """
 
-for image in images:
-    print("OCR:", image)
+    images_dir = Path(output_file).parent / "images"
 
-    full_text += image_to_text(image)
-    full_text += "\n\n"
+    images = pdf_to_images(
+        str(pdf_file),
+        str(images_dir)
+    )
 
-# Clean AFTER OCR
-full_text = clean_text(full_text)
+    full_text = ""
 
-Path("data/raw_text").mkdir(
-    parents=True,
-    exist_ok=True
-)
+    for image in images:
+        print("OCR:", image)
 
-with open(
-    "data/raw_text/ocr_output.txt",
-    "w",
-    encoding="utf-8"
-) as f:
-    f.write(full_text)
+        full_text += image_to_text(image)
+        full_text += "\n\n"
 
-print("Done.")
+    full_text = clean_text(full_text)
+
+    output_path = Path(output_file)
+
+    output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    with open(
+        output_path,
+        "w",
+        encoding="utf-8"
+    ) as f:
+        f.write(full_text)
+
+    print("Done.")
+
+    return True
+
+
+if __name__ == "__main__":
+    run_ocr_pipeline(
+        "data/pdfs/2025.pdf",
+        "data/raw_text/ocr_output.txt"
+    )

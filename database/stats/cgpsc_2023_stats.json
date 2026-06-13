@@ -1,0 +1,29 @@
+{
+  "total_questions": 5,
+  "subjects": {
+    "polity_governance": 2,
+    "chhattisgarh_studies": 2,
+    "unclassified": 1
+  },
+  "topics": {
+    "polity_governance.constitution": 2,
+    "unclassified": 1,
+    "chhattisgarh_studies.society_culture": 1,
+    "chhattisgarh_studies.geography": 1
+  },
+  "subtopics": {
+    "polity_governance.constitution.institutions": 2,
+    "unclassified": 1,
+    "chhattisgarh_studies.society_culture.tribes": 1,
+    "chhattisgarh_studies.geography.physical": 1
+  },
+  "difficulty": {
+    "easy": 3,
+    "medium": 2
+  },
+  "question_types": {
+    "standard_mcq": 3,
+    "statement_based": 2
+  },
+  "generated_at": "2026-06-13T19:51:48.597574"
+}

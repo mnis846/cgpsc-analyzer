@@ -1,0 +1,86 @@
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:06:06] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:06:06] Output  : C:\CGPSC-projects\reader\data\years\2024
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:12:13] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:12:13] Output  : C:\CGPSC-projects\reader\data\years\2024
+[18:12:13] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:12:13] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:21:47] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:21:47] Output  : C:\CGPSC-projects\reader\data\years\2024
+[18:21:47] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:21:47] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:36:39] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:36:39] Output  : C:\CGPSC-projects\reader\data\years\2024
+[18:36:39] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:36:39] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:37:26] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:37:26] Output  : C:\CGPSC-projects\reader\data\years\2024
+[18:37:26] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:37:26] Starting: ocr
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[18:42:48] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[18:42:48] Output  : C:\CGPSC-projects\reader\data\years\2024
+[18:42:48] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[18:42:48] Starting: ocr
+  fail  ocr                    0.0s  — 'module' object is not callable
+[18:42:48] Pipeline aborted (use --no-stop to continue on errors).
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[19:45:31] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[19:45:31] Output  : C:\CGPSC-projects\reader\data\years\2024
+[19:45:31] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[19:45:31] Starting: ocr
+  fail  ocr                    0.0s  — 'module' object is not callable
+[19:45:31] Pipeline aborted (use --no-stop to continue on errors).
+
+============================================================
+  CGPSC Pipeline — Year 2024
+============================================================
+[19:51:48] PDF     : C:\CGPSC-projects\reader\data\pdfs\2024.pdf
+[19:51:48] Output  : C:\CGPSC-projects\reader\data\years\2024
+[19:51:48] Stages  : ocr -> parser -> validator -> analyzer -> analyzer_validator -> statistics -> ingest
+
+[19:51:48] Starting: ocr
+  ok  ocr                    0.0s
+[19:51:48] Starting: parser
+  ok  parser                 0.0s
+[19:51:48] Starting: validator
+  ok  validator              0.0s
+[19:51:48] Starting: analyzer
+  ok  analyzer               0.4s
+[19:51:49] Starting: analyzer_validator
+  ok  analyzer_validator     0.0s
+[19:51:49] Starting: statistics
+  ok  statistics             0.0s
+[19:51:49] Starting: ingest
+  ok  ingest                 0.1s
